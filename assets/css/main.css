@@ -1,0 +1,377 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Stolzl";
+  font-weight: 400;
+  src: url(../../assets/fonts/Stolzl/stolzl_book.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Stolzl";
+  font-weight: 500;
+  src: url(../../assets/fonts/Stolzl/stolzl_medium.otf);
+  font-display: swap;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #F3F8FC;
+  font-family: "Stolzl", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.text-gray {
+  opacity: 0.5;
+}
+
+.chart-1 svg circle {
+  stroke-width: 16;
+  fill: none;
+}
+.chart-1 svg circle:nth-child(1) {
+  stroke: #00A75C;
+  stroke-dasharray: 316.672272 135.716688;
+  stroke-dashoffset: 113.09724;
+}
+.chart-1 svg circle:nth-child(2) {
+  stroke: #E9841D;
+  stroke-dasharray: 45.238896 407.150064;
+  stroke-dashoffset: -203.575032;
+}
+.chart-1 svg circle:nth-child(3) {
+  stroke: #EC133D;
+  stroke-dasharray: 45.238896 407.150064;
+  stroke-dashoffset: -248.813928;
+}
+.chart-1 svg circle:nth-child(4) {
+  stroke: #B6D4ED;
+  stroke-dasharray: 45.238896 407.150064;
+  stroke-dashoffset: -294.052824;
+}
+.chart-1 .card__progress {
+  align-items: center;
+}
+
+.chart-2 svg circle {
+  stroke-width: 17;
+  fill: none;
+}
+.chart-2 svg circle:nth-child(1) {
+  stroke: #E9841D;
+  stroke-dasharray: 103 453;
+  stroke-dashoffset: 283;
+}
+.chart-2 svg circle:nth-child(2) {
+  stroke: rgb(231, 241, 249);
+  stroke-dasharray: 191 374;
+  stroke-dashoffset: 190;
+}
+.chart-2 .card__progress {
+  align-items: end;
+  bottom: 0px;
+  line-height: 1;
+}
+
+.list-1 {
+  gap: 8px;
+  line-height: 1.429;
+}
+
+.list-3 {
+  gap: 12px;
+  line-height: 1.35;
+}
+
+.team__title {
+  margin-bottom: 24px;
+  padding-left: 40px;
+}
+
+.team__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 40px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.04), 0px 2px 4px -2px rgba(24, 39, 75, 0.06);
+}
+
+.card__title {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  padding-right: 24px;
+}
+
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__chart {
+  position: relative;
+}
+
+.card__progress {
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.card__progress-descr {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  font-size: 14px;
+  line-height: 1.43;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.card__descr {
+  width: 183px;
+}
+
+.card__descr h3 {
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 500;
+  margin-bottom: 12.6px;
+}
+
+.card__list {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item svg {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  stroke: none;
+}
+
+.card__item:nth-child(1) svg {
+  fill: #00A75C;
+}
+
+.card__item:nth-child(2) svg {
+  fill: #E9841D;
+}
+
+.card__item:nth-child(3) svg {
+  fill: #EC133D;
+}
+
+.card__item:nth-child(4) svg {
+  fill: #B6D4ED;
+}
+
+.card__status {
+  position: relative;
+  padding-left: 16px;
+}
+
+.card__alert {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 12px 4px 34px;
+  font-size: 12px;
+  border: 1px solid rgb(231, 241, 249);
+  border-radius: 8px;
+}
+.card__alert svg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  top: 0px;
+  left: 12px;
+}
+
+.card__tooltip {
+  position: absolute;
+  top: 1px;
+  right: 0px;
+}
+
+.tooltip .tooltiptext {
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+  z-index: 1;
+  visibility: hidden;
+  width: 170px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  border-radius: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media (max-width: 1050px) {
+  .team {
+    padding: 40px 15px;
+  }
+  .team__cards {
+    flex-direction: column;
+  }
+  .card:nth-child(2) {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .card__content {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */

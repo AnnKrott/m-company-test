@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Stolzl";
+    font-weight: 400;
+    src: url(../../assets/fonts/Stolzl/stolzl_book.otf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Stolzl";
+    font-weight: 500;
+    src: url(../../assets/fonts/Stolzl/stolzl_medium.otf);
+    font-display: swap;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $bgc;
+    font-family: $font;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.text-gray {
+    opacity: 0.5;
+}
+
+.chart-1 {
+    svg circle {
+        stroke-width: 16;
+        fill: none;
+    }
+
+    svg {
+        circle:nth-child(1) {
+            stroke: $chart-completed;
+            stroke-dasharray: $completed (
+                $circle-chart-1 - $completed
+            );
+        stroke-dashoffset: $competed-offset;
+    }
+
+    circle:nth-child(2) {
+        stroke: $chart-going;
+        stroke-dasharray: $going $circle-chart-1 - $going ;
+        stroke-dashoffset: $competed-offset - $completed;
+    }
+
+    circle:nth-child(3) {
+        stroke: $chart-unfinished;
+        stroke-dasharray: $unfinished $circle-chart-1 - $unfinished ;
+        stroke-dashoffset: $competed-offset - $completed - $going;
+    }
+
+    circle:nth-child(4) {
+        stroke: $chart-not-started;
+        stroke-dasharray: $not-started $circle-chart-1 - $not-started ;
+        stroke-dashoffset: $competed-offset - $completed - $going - $unfinished;
+    }
+}
+
+.card__progress {
+    align-items: center;
+}
+}
+
+.chart-2 {
+    svg circle {
+        stroke-width: 17;
+        fill: none;
+    }
+
+    svg {
+        circle:nth-child(1) {
+            stroke: $chart-going;
+            stroke-dasharray: 103 453;
+            stroke-dashoffset: 283;
+        }
+
+        circle:nth-child(2) {
+            stroke: $chart-2-not-started;
+            stroke-dasharray: 191 374;
+            stroke-dashoffset: 190;
+        }
+    }
+
+    .card__progress {
+        align-items: end;
+        bottom: 0px;
+        line-height: 1;
+    }
+}
+
+.list-1 {
+    gap: 8px;
+    line-height: 1.429;
+}
+
+.list-3 {
+    gap: 12px;
+    line-height: 1.35;
+}

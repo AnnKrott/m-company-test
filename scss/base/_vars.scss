@@ -1,0 +1,31 @@
+$bgc: #F3F8FC;
+$bgc-card: #fff;
+
+$chart-completed: #00A75C;
+$chart-going: #E9841D;
+$chart-unfinished: #EC133D;
+$chart-not-started: #B6D4ED;
+$chart-2-not-started: rgba(231, 241, 249, 1);
+
+$font: "Stolzl", sans-serif;
+
+//  chart 1
+
+$radius-chart-1: 72;
+$circle-chart-1: $radius-chart-1 * 2 * 3.14159;
+
+// 1 circle
+$completed: $circle-chart-1 * 0.7;
+$competed-offset: $circle-chart-1 / 4;
+
+// 2 circle
+$going: $circle-chart-1 * 0.1;
+
+// 3 circle
+$unfinished: $circle-chart-1 * 0.1;
+
+// 4 circle
+$not-started: $circle-chart-1 * 0.1;
+
+
+
